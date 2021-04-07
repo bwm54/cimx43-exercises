@@ -1,46 +1,26 @@
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+html { font-size: 22px; }
+body { padding: 1rem; }
+.box {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+
   
-  [class*="area"] {
-    float: left;
-    padding: 15px;
-  }
-  .area1 {width: 8.33%;}
-  .area2 {width: 16.66%;}
-  .area3 {width: 25%;}
-  .area4 {width: 33.33%;}
-  .area5 {width: 41.66%;}
-  .area6 {width: 50%;}
-  .area7 {width: 58.33%;}
-  .area8 {width: 66.66%;}
-  .area9 {width: 75%;}
-  .area10 {width: 83.33%;}
-  .area11 {width: 91.66%;}
-  .area12 {width: 100%;}
+}
+.boxes{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 1rem;
+    padding: 10px;
+    
   
-  .header {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;
-  }
-  
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-  
-  .menu li:hover {
-    background-color: #0099cc;
+}
+.boxes> div {
+   
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
   }
