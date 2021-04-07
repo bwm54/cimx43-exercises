@@ -1,0 +1,10 @@
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="area1"] {
+    float: left;
+    padding: 15px;
+  }
