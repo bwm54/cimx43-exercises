@@ -1,26 +1,32 @@
-html { font-size: 22px; }
-body { padding: 1rem; }
+body {
+    padding: 1rem;
+    font-size: 12px;
+}
+    
+
 .box {
   background-color: dodgerblue;
   color: white;
   padding: 1rem;
-
-  
 }
-.boxes{
+
+#boxes{
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 100px 100px 100px;
-    grid-gap: 1rem;
-    padding: 10px;
+    grid-template-columns: 10rem auto 30rem;
+    grid-template-rows: auto auto auto;
+    grid-gap: .1rem;
+   
     
   
 }
-.boxes> div {
-   
+#boxes> div {
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 22px;
   }
+
+.box1{
+    grid-column: 1 / span 3;
+}
